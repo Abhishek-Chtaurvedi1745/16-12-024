@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,user-scalable=no">
+    <title>Elan The Emperor Sector 106, Dwarka Expressway Gurgaon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <meta name="description" content="Explore Elan the Emperor 4 & 5 BHK apartments, located in sector 106 Dwarka exp. Gurgaon. Get all details - brochure, floor plans, price, photos, reviews etc.">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="dynamic">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.php"><img src="images/the emperor.png" alt="Elan The Emperor" title="Elan The Emperor" height="70px" class="img-fluid" alt=""></a>
+                </div>
+                <div class="menu">
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul class="main-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#highlights">Highlights</a></li>
+                                <li><a href="#amenities">Amenities</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#price-list">Price List</a></li>
+                                <li><a href="#floor-plan">Floor Plan</a></li>
+                                <li><a href="#location">Location</a></li>
+                                <li><a class="mobile-number" href="tel:+919999156255"><i class="fa fa-phone" aria-hidden="true"></i> <span>+919999156255</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <div class="responsive-mobile-number">
+                 <a href="tel:+919999156255"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner" id="home">
+        <div class="banner-info">
+            <div class="container">
+                <div class="banner-info-div">
+                    <div class="banner-information">
+                        <h1>Elan The Emperor</h1>
+                        <h3>4 & 5 BHK Suites</h3>
+                        <p><span><img src="images/location.webp" alt="">Sector 106, Gurgaon</span></p>
+                        <p><span><img src="images/size.webp" alt=""> Sizes: 4300 Sq. Ft.* Onwards</span></p>
+                        <p><span><img src="images/possession.webp" alt=""> Status: Coming Soon (Early Bird Offers)</span></p>
+                        <p><span class="price-banner">Starting Price <img src="images/price.webp" alt=""> 10 Cr* Onwards (Pre-launch)</span></p>
+                    </div>
+                    <div class="banner-form">
+                        <form action="#" method="post" name="submit-to-google-sheet" onsubmit="return validation()">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Book Your New Home</h2>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" id="name" name="Name" class="form-control" placeholder="Name *" autocomplete="off" required>
+                                        <input type="hidden" name="Time" id="time" autocomplete="off" >
+                                        <input type="hidden" name="IP Address" id="ipAddress" autocomplete="off">
+                                        <input type="hidden" name="Operating System" id="os" autocomplete="off">
+                                        <div class="error-message" id="nameError"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="hidden" name="Device" id="deviceType" autocomplete="off">
+                                        <input type="text" id="number" name="Phone no." class="form-control" placeholder="Phone *" maxlength="10" autocomplete="off" required>
+                                        <div class="error-message" id="numberError"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="Email" class="form-control" placeholder="Email *" autocomplete="off" required>
+                                        <input type="hidden" name="Formtype" value="BannerForm">
+                                        <div class="error-message" id="emailError"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <select name="Budget" id="budget" required class="form-control" style="color:">
+                                        <option value="" disabled selected>Budget*</option>
+                                        <option value="Below 5Cr*">Below 5Cr*</option>
+                                        <option value="5Cr* - 10Cr*">5Cr* - 10Cr*</option>
+                                        <option value="10Cr* - 12Cr*">10Cr* - 12Cr*</option>
+                                        <option value="12Cr* - 15Cr*">12Cr* - 15Cr*</option>
+                                        <option value="15Cr* - 18Cr*">15Cr* - 18Cr*</option>
+                                        <option value="18Cr* - 20Cr*">18Cr* - 20Cr*</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button name="submit" class="submit-btn" type="submit" style="margin-top:28px;">
+                                        <span class="button-text">Submit</span>
+                                        <div class="spinner" id="spinner"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="overview both-side-padding" id="overview">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+                    <div class="overview-cnt">
+                        <div class="project-title">
+                            <h2>Elan The Emperor</h2>
+                            <p>Elan The Emperor offers an exceptional living experience with its ultra-luxurious 4 and 5 BHK apartments in the heart of Sector 106, Gurgaon, just off the Dwarka Expressway. Set to become one of the most sought-after addresses,
+                                this new development promises a lifestyle of unparalleled comfort and style.</p>
+                            <p>Spanning across three magnificent towers, Elan The Emperor features two 4 BHK towers and one 5 BHK tower, each with a unique design. These towers, rising to 38 stories, will be a symbol of prestige and elegance in Gurgaon’s
+                                skyline. With spacious layouts and premium specifications, each apartment is a perfect blend of modern architecture and opulence.</p>
+                            <p>Every detail in Elan The Emperor is designed for luxury. From the grand entrance to the elegant tower lobbies and high-end finishes within the apartments, everything exudes sophistication. The tower features advanced lifts
+                                and floor lobbies that provide a touch of class at every level.</p>
+                            <p>Located in a premium area of Gurgaon, the project is strategically positioned to offer unmatched connectivity, ensuring easy access to major hubs like the airport, business districts, and shopping centers. The Dwarka Expressway,
+                                which lies just a stone’s throw away, enhances accessibility to Delhi and surrounding areas.</p>
+                            <p>With prices starting from 10 Cr* onwards, Elan The Emperor presents a rare opportunity to invest in one of Gurgaon’s most prestigious locations. The project is currently in the pre-launch phase, offering early bird offers for
+                                those who wish to secure their place in this luxurious development. Don’t miss out on owning a piece of this grand lifestyle—Elan The Emperor awaits you.</p>
+                            <h4>RERA No: Applied</h4>
+                        </div>
+                        <ul class="call-to-action">
+                            <li><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Enquire Now</a></li>
+                            <li><a href="tel:+919999156255" class="btn">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="project-usp">
+                        <ul>
+                            <li>
+                                <p class="counter">30* acres</p>
+                                <span>Land Area</span>
+                            </li>
+                            <li>
+                                <p class="counter">1800</p>
+                                <span>Total Units</span>
+                            </li>
+                            <li>
+                                <p class="counter">G + 38*</p>
+                                <span>Total Floors</span>
+                            </li>
+                            <li>
+                                <p class="counter">3</p>
+                                <span>Total Tower</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-highlights" id="highlights">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="highlight-div">
+                        <div class="project-title">
+                            <h2>Project Highlights</h2>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check"></i>  22 Acres Lush Greens</li>
+                            <li><i class="fa fa-check"></i> 1.5 lackhs Sq.ft clubhouse of 7 floors</li>
+                            <li><i class="fa fa-check"></i> 12+ International Consultent</li>
+                            <li><i class="fa fa-check"></i> 3 To Core Apartments</li>
+                            <li><i class="fa fa-check"></i> 129+ Amenities</li>
+                            <li><i class="fa fa-check"></i> 7 Star Arrival Lobby</li>
+                            <li><i class="fa fa-check"></i> Smart Home Automation</li>
+                            <li><i class="fa fa-check"></i> Face Reading Entry</li>
+                        </ul>
+                        <ul class="call-to-action">
+                            <li><a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Download Brochure</a></li>
+                        </ul>
+                    </div> <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+                    <link rel="stylesheet" href="css/fancybox.min.css">
+                    <link rel="stylesheet" href="css/style.css">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-amenities both-side-padding" id="amenities">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="amenities-div">
+                        <div class="project-title text-center">
+                            <h2>Project Amenities</h2>
+                        </div>
+                        <div class="amenities-slider">
+                            <div class="swiper-container amenities-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/gym.png" alt="gym" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Gym</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/infinity-pool.png" alt="Swimming Pool" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Swimming Pool</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/parking.png" alt="Car Parking" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Car Parking</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/squash.png" alt="Squash Court" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Squash Court</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/yoga.png" alt="yoga" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Yoga</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="amenities-slider-item">
+                                            <div class="amenities-img-slide">
+                                                <img src="images/amenities/multipurpose-hall.png" alt="Multipurpose Hall" width="217" height="247" class="img-fluid">
+                                            </div>
+                                            <p>Multipurpose Hall</p>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ctt4 container-fluid">
+    <div class="ctt container-lg">
+        <div class="ct1 container">
+            <h1>10+ CONSULTANT</h1>
+            <div class="ct2">
+            <p><strong>Leighton</strong>: Contruction Partner</p>
+            <p><strong>WET</strong>: Water Body</p>
+            <p><strong>CD+M</strong>: Lighting</p>
+            <p><strong>BENOY</strong>: Architect</p>
+            <p><strong>UHA London</strong>: Design</p>
+            <p><strong>Foster + Partner</strong>: Master Plan</p>
+            <p><strong>SNC</strong>: MEP</p>
+            <p><strong>SWA</strong>: Landscaping</p>
+            <p><strong>MERO</strong>: Club Designer</p>
+            <p><strong>HBA</strong>: Internal Lobby</p>
+        </div>
+        </div>
+        <div class="img234">
+            <img src="images/banner.webp" alt="">
+        </div>
+     </div>
+    </div>
+    <section class="project-gallery both-side-padding" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gallery-div">
+                        <div class="project-title text-center">
+                            <h2>Gallery</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item overlay-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-1.webp">
+                                        <img src="images/gallery/gallery-1.webp" alt="Elan The Emperor" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-2.webp">
+                                        <img src="images/gallery/gallery-2.webp" alt="Elan The Emperor gurgaon" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-3.webp">
+                                        <img src="images/gallery/gallery-3.webp" alt="Elan The Emperor Price" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item overlay-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-1.webp">
+                                        <img src="images/gallery/gallery-4.webp" alt="Elan The Emperor sector 106 gurgaon" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-2.webp">
+                                        <img src="images/gallery/gallery-5.webp" alt="Elan The Emperor" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-fancybox="gallery" title="click to zoom-in" href="images/gallery/gallery-3.webp">
+                                        <img src="images/gallery/gallery-6.webp" alt="Elan The Emperor" width="2000" height="1000" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price-list both-side-padding" id="price-list">
+        <div class="container">
+            <div class="price-list-div">
+                <div class="project-title text-center">
+                    <h2>Price List</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="flat-box wow bounce">
+                            <h3 class="type">4 BHK (Wing)</h3>
+                            <hr>
+                            <div class="flat-detail">
+                                <p class="type"><span>Size:</span>4300 Sq. Ft. Onwards*</p>
+                                <p class="type"><span>Price:</span> <i class="fa fa-rupee-sign"></i> 10 Cr* <small>Onwards</small></p>
+                            </div>
+                            <div class="foot-flat">
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Price Breakup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="flat-box wow bounce">
+                            <h3 class="type">4 BHK (Nose)</h3>
+                            <hr>
+                            <div class="flat-detail">
+                                <p class="type"><span>Size:</span>4800 Sq. Ft. Onwards*</p>
+                                <p class="type"><span>Price:</span> <i class="fa fa-rupee-sign"></i> On Request</p>
+                            </div>
+                            <div class="foot-flat">
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Price Breakup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="flat-box wow bounce">
+                            <h3 class="type">5 BHK (Wing)</h3>
+                            <hr>
+                            
+                            <div class="flat-detail">
+                                <p class="type"><span>Size:</span>5300 Sq. Ft. Onwards*</p>
+                                <p class="type"><span>Price:</span> <i class="fa fa-rupee-sign"></i> On Request</p>
+                            </div>
+                            <div class="foot-flat">
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Price Breakup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="flat-box wow bounce">
+                            <h3 class="type">5 BHK (Nose)</h3>
+                            <hr>
+                            <div class="flat-detail">
+                                <p class="type"><span>Size:</span>5800 Sq. Ft. Onwards*</p>
+                                <p class="type"><span>Price:</span> <i class="fa fa-rupee-sign"></i> On Request</p>
+                            </div>
+                            <div class="foot-flat">
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Price Breakup</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-floor-plan both-side-padding" id="floor-plan">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="floor-plan-div">
+                        <div class="project-title text-center">
+                            <h2>Floor Plan</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-bs-toggle="modal" data-bs-target="#enquire-modal" href="#">
+                                        <img src="images/floor-plan/floor-plan1.webp" alt="Elan The Emperor 4bhk floor plan" width="1000" height="620" class="img-fluid">
+                                        <span class="caption-box">
+                                            <span class="content">
+                                               <span>Download Floor Plan</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-bs-toggle="modal" data-bs-target="#enquire-modal" href="#">
+                                        <img src="images/floor-plan/floor-plan2.webp" alt="Elan The Emperor 5bhk floor plan" width="1000" height="620" class="img-fluid">
+                                        <span class="caption-box">
+                                            <span class="content">
+                                               <span>Download Floor Plan</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="gallery-item">
+                                    <a data-bs-toggle="modal" data-bs-target="#enquire-modal" href="#">
+                                        <img src="images/floor-plan/floor-plan3.webp" alt="Elan The Emperor master plan" alt="" width="1000" height="620" class="img-fluid">
+                                        <span class="caption-box">
+                                            <span class="content">
+                                               <span>Download Floor Plan</span>
+                                            </span> 
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-location-advantage both-side-padding" id="location">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="location-map">
+                        <img src="images/location-advantage.webp" alt="Elan The Emperor Location Advantage" width="1024" height="1024" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="location-cnt">
+                        <div class="project-title">
+                            <h2>Location Advantage</h2>
+                        </div>
+                        <ul class="highlights-ul">
+                            <li><i class="fa fa-check"> </i> The forthcoming Elan new residential project in sector 106 Gurgaon is linked with Dwarka-Gurugram Expressway on the metro corridor.</li>
+                            <li><i class="fa fa-check"> </i> It's a 15 Minutes from the Delhi Airport</li>
+                            <li><i class="fa fa-check"> </i> A short drive from MG Road, the high road of Gurgaon</li>
+                            <li><i class="fa fa-check"> </i> Nearness to significant focuses of trade and business centres</li>
+                            <li><i class="fa fa-check"> </i> The advantage of Elan Sector 106 Residency is the presence of public infrastructures like Bank ATM, groceries, Indian oil petrol pump and shopping mall.</li>
+                        </ul>
+                        <div class="call-to-action">
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#enquire-modal">Get Site Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project-video-section both-side-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="project-video-div">
+                        <p>Project Video</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#enquire-modal"><i class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-developer both-side-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-developer-div">
+                        <div class="project-title text-center">
+                            <h2>About Elan Group</h2>
+                            <p>Since 2013, Elan Group Has Set New Benchmarks in the World of Real Estate With Its High-End Commercial and Residential Projects. Elan Offers Properties That Epitomize Innovation and Sophistication.</p>
+                            <p>A Trusted Name in Luxury When It Comes to the Real Estate Realm, Elan Group Knows the Potential the Indian Realty Sector Holds. It Strives to Contribute to the Sector’s Growth Through Cost-Effective and Ultra-Luxurious Residential,
+                                Commercial and Hospitality Properties.</p>
+                            <p>All Thanks to Its Wide-Ranging Expertise, Elan Group Offers One-Of-Its-Kind Projects, Unique Pricing and Top-Notch Services. With an Unwavering Commitment to Offering Cutting-Edge Designs and Precise Attention to Detail, the
+                                Group Continues to Bring a Major Positive Transformation in the Indian Real Estate Sector.</p>
+                            <p>Elan Group Continuously Reinvents the Connection Between People and Spaces With the Help of New Technologies and Breakthrough Innovations. The Group’s Properties Are the Epitome of Elegance and Sophistication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close23">&times;</span>
+          <h2 style="text-align: center;">DISCLAIMER</h2>
+          <p><strong>MAISON INFRATECH PVT. LTD. | CIN No.</strong></p>
+          <p style="font-size: 1rem;">Promoter urges every applicant to inspect the project site and shall not merely rely upon any architectural impression, plan or sales brochure and, therefore, requests to make personal judgment prior to submitting an application for allotment. The Project is being developed in phases, hence, certain facilities/amenities etc, may be used by allottee of other phases. Unless otherwise stated, all the images, visuals, materials and information contained herein are purely creative/artistic and may not be actual representations of the product and/or any amenities. Further, the actual design may vary in the fit and finished form, from the one displayed above. Journey time shown, if any, is based upon Google Maps which may vary as per the traffic at a relevant point of time. *Rate mentioned above does not include GST and other statutory charges, if applicable. T & C Apply. 1 sq. mt. = 10.7639 sq. ft.</p>
+        </div>
+      </div>
+    <footer>
+        <div class="container">
+            <p><b>Maison Infratech Pvt. Ltd. Marketed By Authorised Channel Partner AGENT RERA REGISTRATION NO.: NO. GGM/772/2018/376/EXT1/2024/37 (WWW.HARYANARERA.GOV.IN)</b></p>
+            <p>This is not the official website of developer property, it belongs to authorised channel partner for information purpose only. All rights for logo &amp; images are reserved to developer. Thank you for visiting our website. This disclaimer
+                ("Disclaimer") is applicable to this website and all microsites and websites owned by us. By using or accessing this website you agree with the Disclaimer without any qualification or limitation. This website is in the process of being
+                updated. By accessing this website, the viewer confirms that the information including brochures and marketing collaterals on this website are solely for informational purposes only and the viewer has not relied on this information for
+                making any booking/purchase in any project of the company. Nothing on this website, constitutes advertising, marketing, booking, selling or an offer for sale, or invitation to purchase a unit in any project by the company. The company
+                is not liable for any consequence of any action taken by the viewer relying on such material/ information on this website.</p>
+            <ul>
+                <a style="cursor: pointer;" id="openModalBtn" class="diis">Disclaimer</a>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="contact-buttons">
+        <ul>
+            <li><a class="enquire-btn" href="#" data-bs-toggle="modal" data-bs-target="#enquire-modal"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" class="whatsapp-btn" href="https://api.whatsapp.com/send?phone=+919999156255&text=Hi!%20Im%20Interested%20in%20Elan%20The%20Emperor%20on%20Dwarka%20Expressway,%20Gurgaon.%20Please%20Share%20Details."><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="sidebar-contact">
+        <div class="toggle" data-bs-toggle="modal" data-bs-target="#enquire-modal">Enquire Now</div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close23">&times;</span>
+          <h2 style="text-align: center; " id="openModalBtn" class="diis"> DISCLAIMER</h2>
+          <p><strong>MAISON INFRATECH PVT. LTD. | CIN No.</strong></p>
+          <p style="font-size: 1rem;">Promoter urges every applicant to inspect the project site and shall not merely rely upon any architectural impression, plan or sales brochure and, therefore, requests to make personal judgment prior to submitting an application for allotment. The Project is being developed in phases, hence, certain facilities/amenities etc, may be used by allottee of other phases. Unless otherwise stated, all the images, visuals, materials and information contained herein are purely creative/artistic and may not be actual representations of the product and/or any amenities. Further, the actual design may vary in the fit and finished form, from the one displayed above. Journey time shown, if any, is based upon Google Maps which may vary as per the traffic at a relevant point of time. *Rate mentioned above does not include GST and other statutory charges, if applicable. T & C Apply. 1 sq. mt. = 10.7639 sq. ft.</p>
+        </div>
+      </div>
+    <div class="modal fade" id="enquire-modal" tabindex="-1" aria-labelledby="enquire-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    <div class="modal-form">
+                        <form action="#" method="post" name="submit-to-google-sheet1" id="form1">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Book Your New Home</h2>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" id="name1" name="Name" class="form-control" placeholder="Name *" required autocomplete="off">
+                                        <input type="hidden" name="Formtype" value="PopupForm">
+                                        <input type="hidden" name="Time" id="time1" autocomplete="off" >
+                                        <input type="hidden" name="IP Address" id="ipAddress1" autocomplete="off">
+                                        <input type="hidden" name="Operating System" id="os1" autocomplete="off">
+                                        <span id="nameError1" class="error-message1"></span>
+                                    </div> 
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input id="phone1" name="Phone no." class="form-control" required placeholder="Phone *" type="text" maxlength="10" autocomplete="off">
+                                        <span id="numberError1" class="error-message1"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input id="email1" name="Email" class="form-control" required placeholder="Email *" type="email" autocomplete="off">
+                                        <span id="emailError1" class="error-message1"></span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <select name="Budget" id="budget1" required class="form-control">
+                                            <option value="" disabled selected>Budget*</option>
+                                            <option value="Below 5Cr*">Below 5Cr*</option>
+                                            <option value="5Cr* - 10Cr*">5Cr* - 10Cr*</option>
+                                            <option value="10Cr* - 12Cr*">10Cr* - 12Cr*</option>
+                                            <option value="12Cr* - 15Cr*">12Cr* - 15Cr*</option>
+                                            <option value="15Cr* - 18Cr*">15Cr* - 18Cr*</option>
+                                            <option value="18Cr* - 20Cr*">18Cr* - 20Cr*</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button name="submit1" class="btn submit-btn" type="submit">
+                                        <span id="buttonText1">Submit</span>
+                                        <div class="spinner1" id="spinner1"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="./js/external.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        const modal = document.getElementById('modal');
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+    
+        openModalBtn.onclick = function() {
+          modal.style.display = 'block';
+        }    
+        closeModalBtn.onclick = function() {
+          modal.style.display = 'none';
+        }    
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        }
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby8JrRqMy7YNESv7xJXOPglzdWc5NLfMb90Lu0ygruOmcsu7SSQX6fxp_3hu26dUIaOTA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+      
+        fetch('https://api.ipify.org?format=json')
+          .then(response => response.json())
+          .then(data => {
+            document.getElementById('ipAddress').value = data.ip;
+          })
+          .catch(error => console.error('Error fetching Public IP:', error));
+      
+        function getCurrentTime() {
+          const now = new Date();
+          document.getElementById('time').value = now.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+        }
+      
+        function getOperatingSystem() {
+          let userAgent = navigator.userAgent;
+          if (userAgent.includes("Windows NT 10.0")) return "Windows 11";
+          if (userAgent.includes("Windows NT 6.1")) return "Windows 7";
+          if (userAgent.includes("Mac OS X")) return "macOS";
+          if (userAgent.includes("Android")) return "Android";
+          if (userAgent.includes("iPhone") || userAgent.includes("iPad")) return "iOS";
+          if (userAgent.includes("Linux")) return "Linux";
+          return "Unknown OS";
+        }
+        document.getElementById('os').value = getOperatingSystem();
+
+        function getDeviceType() {
+          let ua = navigator.userAgent;
+          if (/Mobile|Android|iP(hone|od)/i.test(ua)) return "Mobile";
+          if (/iPad|Tablet/i.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 1)) return "Tablet";
+          return "Desktop";
+        }
+        document.getElementById('deviceType').value = getDeviceType();
+      
+        function getPrivateIP() {
+          return new Promise((resolve, reject) => {
+            let RTCPeerConnection = window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection;
+            if (!RTCPeerConnection) return reject("WebRTC not supported.");
+            
+            let rtc = new RTCPeerConnection({ iceServers: [] });
+            rtc.createDataChannel("");
+            rtc.createOffer()
+              .then(offer => rtc.setLocalDescription(offer))
+              .catch(err => reject(err));
+      
+            rtc.onicecandidate = event => {
+              if (event && event.candidate && event.candidate.candidate) {
+                let match = event.candidate.candidate.match(/(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})/);
+                if (match) resolve(match[1]);
+              }
+            };
+      
+            setTimeout(() => reject("Private IP detection failed."), 1000);
+          });
+        }
+      
+        getPrivateIP()
+          .then(ip => document.getElementById('privateIpAddress').value = ip)
+          .catch(error => console.error('Error fetching Private IP:', error));
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          getCurrentTime(); 
+
+          if (validation()) {
+            const spinner = document.getElementById('spinner');
+            const buttonText = document.querySelector('.button-text');
+             spinner.style.display = 'block'; 
+             buttonText.classList.add('hidden-text');
+            
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+              .then(response => {
+                console.log('Success!', response);
+                form.reset();
+                window.location.href = 'Thankyou.html';
+              })
+              .catch(error => {
+                console.error('Error!', error.message);
+                alert('Form submission failed.');
+              })
+              .finally(() => {
+                spinner.style.display = 'none';
+                buttonText.classList.remove('hidden-text');
+              });
+          }
+        });
+         
+        function validation() {
+          let isValid = true;
+          let name = document.getElementById("name");
+          let phone = document.getElementById("number");
+          let email = document.getElementById("email");
+      
+          const nameError = document.getElementById("nameError");
+          const numberError = document.getElementById("numberError");
+          const emailError = document.getElementById("emailError");
+      
+          name.classList.remove("error-border");
+          phone.classList.remove("error-border");
+          email.classList.remove("error-border");
+      
+          nameError.textContent = "";
+          numberError.textContent = "";
+          emailError.textContent = "";
+      
+          if (!/^[a-zA-Z\s]{3,29}$/.test(name.value)) {
+            nameError.textContent = "Invalid Name";
+            name.classList.add("error-border");
+            isValid = false;
+          }
+      
+          if (!/^\d{10}$/.test(phone.value) || /^[1-5]/.test(phone.value)) {
+            numberError.textContent = "Enter a valid 10-digit phone number (without country code, not starting with 1-5)";
+            phone.classList.add("error-border");
+            isValid = false;
+          }
+      
+          if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,6}$/.test(email.value)) {
+            emailError.textContent = "Enter a valid email address.";
+            email.classList.add("error-border");
+            isValid = false;
+          }
+      
+          return isValid;
+        }
+      </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scriptURL1 = 'https://script.google.com/macros/s/AKfycby8JrRqMy7YNESv7xJXOPglzdWc5NLfMb90Lu0ygruOmcsu7SSQX6fxp_3hu26dUIaOTA/exec';
+            const form1 = document.getElementById('form1');
+    
+            fetch('https://api.ipify.org?format=json')
+              .then(response => response.json())
+              .then(data => {
+                document.getElementById('ipAddress1').value = data.ip;
+              })
+              .catch(error => console.error('Error fetching Public IP:', error));
+    
+            function getCurrentTime() {
+              const now = new Date();
+              document.getElementById('time1').value = now.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' });
+            }
+    
+            function getOperatingSystem() {
+              let userAgent = navigator.userAgent;
+              if (userAgent.includes("Windows NT 10.0")) return "Windows 11";
+              if (userAgent.includes("Windows NT 6.1")) return "Windows 7";
+              if (userAgent.includes("Mac OS X")) return "macOS";
+              if (userAgent.includes("Android")) return "Android";
+              if (userAgent.includes("iPhone") || userAgent.includes("iPad")) return "iOS";
+              if (userAgent.includes("Linux")) return "Linux";
+              return "Unknown OS";
+            }
+            document.getElementById('os1').value = getOperatingSystem();
+    
+            form1.addEventListener('submit', e => {
+                e.preventDefault();
+    
+                getCurrentTime();
+    
+                if (validation1()) {
+                    const spinner1 = document.getElementById('spinner1');
+                    const buttonText1 = document.getElementById('buttonText1');
+                    spinner1.style.display = 'block';
+                    buttonText1.classList.add('hidden-text1');
+    
+                    fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+                        .then(response => {
+                            console.log('Success!', response);
+                            form1.reset();
+                            window.location.href = 'Thankyou.html';
+                        })
+                        .catch(error => {
+                            console.error('Error!', error.message);
+                            alert('There was an error submitting the form.');
+                        })
+                        .finally(() => {
+                            spinner1.style.display = 'none';
+                            buttonText1.classList.remove('hidden-text1');
+                        });
+                }
+            });
+    
+            function validation1() {
+                let name1 = document.getElementById("name1");
+                let phone1 = document.getElementById("phone1");
+                let email1 = document.getElementById("email1");
+                let isValid = true;
+    
+                const nameError1 = document.getElementById("nameError1");
+                const numberError1 = document.getElementById("numberError1");
+                const emailError1 = document.getElementById("emailError1");
+    
+                name1.classList.remove("error-border1");
+                phone1.classList.remove("error-border1");
+                email1.classList.remove("error-border1");
+    
+                nameError1.textContent = "";
+                numberError1.textContent = "";
+                emailError1.textContent = "";
+
+                if (!/^[a-zA-Z\s]+$/.test(name1.value) || name1.value.length < 3 || name1.value.length > 29) {
+                    nameError1.textContent = "Invalid Name";
+                    name1.classList.add("error-border1");
+                    isValid = false;
+                }
+    
+                if (!/^\d{10}$/.test(phone1.value) || /^[1-5]/.test(phone1.value)) {
+                    numberError1.textContent = "Enter a valid 10-digit phone number.";
+                    phone1.classList.add("error-border1");
+                    isValid = false;
+                }
+    
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,6}$/;
+                if (!emailPattern.test(email1.value)) {
+                    emailError1.textContent = "Please enter a valid email address.";
+                    email1.classList.add("error-border1");
+                    isValid = false;
+                }
+    
+                return isValid;
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var myModal = new bootstrap.Modal(document.getElementById('enquire-modal'));
+    myModal.show();
+});
+    </script>
+</body>
+</html>

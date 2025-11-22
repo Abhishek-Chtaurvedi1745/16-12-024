@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/fancybox.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+          .thimg{
+            background-image: url(images/locationConnectivity_bg\ \(1\).jpg);
+            background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+          }
+          header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    padding: 15px 0;
+    background-color: #000000;
+}
+          .fo{
+  background-color: black;
+}
+.ft24{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ft23{
+  margin: 20px 50px;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+.modal-content{
+  background-color: white;
+  margin: 10% auto; 
+  padding: 20px;
+  border-radius: .1px;
+  width: 80%;
+  z-index: 10001101;
+  max-width: 600px;
+  position: relative;
+  text-align: justify;
+}
+.close23{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close23:hover,
+.close23:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+          .ft2  .p65{
+           color: white;
+           margin: 50px 50px 50px 0px;
+           font-size: .9rem;
+      }
+.ft2 .p56{
+    font-size:large;
+    color: white;
+    margin: 50px 0px 50px 200px;
+    font-size: .9rem;
+}
+@media(max-width:600px){
+    .modal-content{
+        margin-top: 90px;
+        width: 90%;
+        margin-left:6%;
+    }
+}
+@media(max-width:800px){
+   .ft2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .ft2 .p65{
+    margin:50px 0px 10px 0px;
+   }
+   .ft2 .p56{
+     margin:50px 0px 50px 0px;
+   }
+}
+.lgg{
+    max-width: 200px;
+}
+</style>
+        
+</head>
+<body>
+    <header id="dynamic">
+        <div class="container">
+            <div class="header-inner">
+                <div class="lgg">
+                    <a href=""><img src="images/the emperor.png" alt="Elan The Emperor" title="Elan The Emperor" height="70px" class="img-fluid" alt=""></a>
+                </div>
+                <div class="menu">
+                    <div class="button_container" id="toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul class="main-menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#highlights">Highlights</a></li>
+                                <li><a href="#amenities">Amenities</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#price-list">Price List</a></li>
+                                <li><a href="#floor-plan">Floor Plan</a></li>
+                                <li><a href="#location">Location</a></li>
+                                <li><a class="mobile-number" href="tel:+919999156255"><i class="fa fa-phone" aria-hidden="true"></i> <span>+919999156255</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="responsive-mobile-number">
+                    <a href="tel:+919999156255"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+      <div class="thimg">
+          <h1>THANK YOU</h1>
+          <p style="margin: 0px 10px;">We have received your query. Our advisor will get in touch with you shortly</p>
+        </div>
+      </div>
+      <div class="ft container-fluid">
+        <div class="ft1 container">
+            <div class="ft2">
+                 <p class="p65">
+                  Marketed By Authorised Channel Partner
+                  AGENT RERA REGISTRATION NO.:
+                  NO. GGM/772/2018/376/EXT1/2024/37
+                  (WWW.HARYANARERA.GOV.IN) 
+                  <br>
+                   <a class="diis" style=" cursor: pointer;color: blue;" id="openModalBtn">Disclaimer</a> 
+                  </p>
+                <p class="p56">The content of this website is only for information purposes and does not belong to any official website of developer property. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. All rights for logo & images are reserved to the developer. Thank you for visiting our website.</p>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close23">&times;</span>
+        <h2 style="text-align: center;">DISCLAIMER</h2>
+        <p><strong>MAISON INFRATECH PVT. LTD. | CIN No.</strong></p>
+        <p style="font-size: 1rem;">Promoter urges every applicant to inspect the project site and shall not merely rely upon any architectural impression, plan or sales brochure and, therefore, requests to make personal judgment prior to submitting an application for allotment. The Project is being developed in phases, hence, certain facilities/amenities etc, may be used by allottee of other phases. Unless otherwise stated, all the images, visuals, materials and information contained herein are purely creative/artistic and may not be actual representations of the product and/or any amenities. Further, the actual design may vary in the fit and finished form, from the one displayed above. Journey time shown, if any, is based upon Google Maps which may vary as per the traffic at a relevant point of time. *Rate mentioned above does not include GST and other statutory charges, if applicable. T & C Apply. 1 sq. mt. = 10.7639 sq. ft.</p>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('modal');
+      const openModalBtn = document.getElementById('openModalBtn');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+  
+      openModalBtn.onclick = function() {
+        modal.style.display = 'block';
+      }
+  
+      closeModalBtn.onclick = function() {
+        modal.style.display = 'none';
+      }
+  
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      }
+    </script>
+</body>
+</html>
